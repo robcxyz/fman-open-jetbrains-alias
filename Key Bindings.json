@@ -1,0 +1,7 @@
+[
+	{ "keys": ["Alt+Shift+I"], "command": "open_intellij" },
+	{ "keys": ["Alt+Shift+P"], "command": "open_pycharm" }, 
+	{ "keys": ["Alt+Shift+G"], "command": "open_goland" },
+	{ "keys": ["Alt+Shift+W"], "command": "open_webstorm" },
+	{ "keys": ["Alt+Shift+C"], "command": "open_clion" }
+]

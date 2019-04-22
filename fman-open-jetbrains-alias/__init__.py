@@ -19,29 +19,31 @@ def run_command(file_under_cursor, exec_path):
 	system(cmd)
 
 
+# TODO: Needed to relink on update from jetbrains toolbox. Will need to find better way than this.
+
 class OpenIntellij(DirectoryPaneCommand):
 	def __call__(self):
 		file_under_cursor = self.pane.get_file_under_cursor()
 		# assign to alias link location
-		run_command(file_under_cursor, "C:\\Aliases\\intellij")
+		run_command(file_under_cursor, "C:\\Aliases\\IntelliJ IDEA Ultimate.lnk")
 
 class OpenPycharm(DirectoryPaneCommand):
 	def __call__(self):
 		file_under_cursor = self.pane.get_file_under_cursor()
-		run_command(file_under_cursor, "C:\\Aliases\\pycharm")
+		run_command(file_under_cursor, "C:\\Aliases\\PyCharm Professional.lnk")
 
 class OpenGoland(DirectoryPaneCommand):
 	def __call__(self):
 		file_under_cursor = self.pane.get_file_under_cursor()
-		run_command(file_under_cursor, "C:\\Aliases\\goland")
+		run_command(file_under_cursor, "C:\\Aliases\\GoLand.lnk")
 
 class OpenWebstorm(DirectoryPaneCommand):
 	def __call__(self):
 		file_under_cursor = self.pane.get_file_under_cursor()
-		run_command(file_under_cursor, "C:\\Aliases\\webstorm")
+		run_command(file_under_cursor, "C:\\Aliases\\WebStorm.lnk")
 
 class OpenClion(DirectoryPaneCommand):
 	def __call__(self):
 		file_under_cursor = self.pane.get_file_under_cursor()
-		run_command(file_under_cursor, "C:\\Aliases\\clion")
+		run_command(file_under_cursor, "C:\\Aliases\\CLion.lnk")
 

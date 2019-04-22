@@ -20,17 +20,19 @@ def run_command(file_under_cursor, exec_path):
 
 
 # TODO: Needed to relink on update from jetbrains toolbox. Will need to find better way than this.
+# TODO: spaces are note behaving normally as they would with non shortcuts. Would usually use pathlib / subprocess.
+# Need to chage shortcut 
 
 class OpenIntellij(DirectoryPaneCommand):
 	def __call__(self):
 		file_under_cursor = self.pane.get_file_under_cursor()
 		# assign to alias link location
-		run_command(file_under_cursor, "C:\\Aliases\\IntelliJ IDEA Ultimate.lnk")
+		run_command(file_under_cursor, "C:\\Aliases\\IntelliJIDEAUltimate.lnk")
 
 class OpenPycharm(DirectoryPaneCommand):
 	def __call__(self):
 		file_under_cursor = self.pane.get_file_under_cursor()
-		run_command(file_under_cursor, "C:\\Aliases\\PyCharm Professional.lnk")
+		run_command(file_under_cursor, "C:\\Aliases\\PyCharmProfessional.lnk")
 
 class OpenGoland(DirectoryPaneCommand):
 	def __call__(self):
